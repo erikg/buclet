@@ -13,16 +13,19 @@
 
 (define-foreign-library bullet-dynamics
   (:windows "libBulletDynamics.dll")
+  (:darwin "libBulletDynamics.dylib")
   (:unix "libBulletDynamics.so")
   (t "libBulletDynamics"))
 
 (define-foreign-library bullet-collision
   (:windows "libBulletCollision.dll")
+  (:darwin "libBulletCollision.dylib")
   (:unix "libBulletCollision.so")
   (t "libBulletCollision"))
 
 (define-foreign-library linear-math
   (:windows "libLinearMath.dll")
+  (:darwin "libLinearMath.dylib")
   (:unix "libLinearMath.so")
   (t "libLinearMath"))
 
